@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A webapp to save and display athlete's test results",
   "main": "index.js",
-  "compilerOptions" : {
-    //**/
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/config/server.ts",
@@ -29,5 +26,5 @@
     "nodemon": "^2.0.12",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
-  },
+  }
 }
