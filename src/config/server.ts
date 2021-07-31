@@ -23,7 +23,7 @@ app.get("/overview", async (req, res) => {
     const client = await pool.connect();
     const result = await client.query("SELECT * FROM user");
     const results = { results: result ? result.rows : null };
-    res.send(results);
+    console.log(results);
     res.render("pages/overview", results);
     client.release();
   } catch (err) {
