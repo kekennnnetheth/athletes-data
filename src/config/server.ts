@@ -21,7 +21,8 @@ app.get("/overview", async (req, res) => {
     const client = await pool.connect();
     const result = await client.query("SELECT * FROM user");
     const results = { results: result ? result.rows : null };
-    res.render("pages/overview", results);
+    res.send(results);
+    // res.render("pages/overview", results);
     client.release();
   } catch (err) {
     console.error(err);
