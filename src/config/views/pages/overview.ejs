@@ -18,11 +18,14 @@
     <th>Email Address</th>
     <th>Phone Number</th>
   </tr>
-  <table>
     <% results.forEach(function(r) { %>
-        <tr><%= r.id %> - <%= r.full_name %> - <%= r.email %> - <%= r.phone_number %></tr>
+      <tr>
+        <td><%= r.id%></td>
+        <td><%= r.full_name%></td>
+        <td><%= r.email%></td>
+        <td><%= r.phone_number%></td>
+      </tr>
     <% }); %>
-    </table>
 </table>
 
 </div>
