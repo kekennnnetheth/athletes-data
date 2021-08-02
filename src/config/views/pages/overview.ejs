@@ -11,11 +11,17 @@
 <div class="container">
 <h2>Database Results</h2>
 
-<ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.full_name %> - <%= r.email %> - <%= r.phone_number %></li>
-    <% }); %>
-</ul>
+<table>
+  <tr>
+    <th>User ID</th>
+    <th>Full Name</th>
+    <th>Email Address</th>
+    <th>Phone Number</th>
+  </tr>
+  <% results.forEach(function(r) { %>
+    <tr><%= r.id %> - <%= r.full_name %> - <%= r.email %> - <%= r.phone_number %></tr>
+  <% }); %>
+</table>
 
 </div>
 
