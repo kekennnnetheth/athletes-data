@@ -35,7 +35,7 @@ app.get("/overview", async (req, res) => {
 app.get("/2400m_run", async (req, res) => {
   try {
     const client = await pool.connect();
-    const result = await client.query("SELECT * FROM 2400m_run");
+    const result = await client.query(`SELECT * FROM "2400m_run"`);
     const results = { results: result ? result.rows : null };
     console.log(results);
     res.render("pages/2400m_run", results);
