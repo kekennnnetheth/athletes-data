@@ -4,19 +4,19 @@
 <div class="container">
 <h2>2400m Run Database Results</h2>
 
-<table class="2400m-run-table">
+<table class="two-thousand-four-hundred-metre-run-table">
   <tr>
     <th>Full Name</th>
     <th>Last Timing</th>
     <th>Date of Last Timing</th>
-    <th>Past Results</th>
+    <th>Past Timings</th>
   </tr>
     <% results.forEach(function(r) { %>
       <tr>
-        <td><%= r.id%></td>
         <td><%= r.full_name%></td>
-        <td><%= r.email%></td>
-        <td><%= r.phone_number%></td>
+        <td><%= r.last_timing%></td>
+        <td><%= r.date_of_last_timing%></td>
+        <td><%= r.past_timings%></td>
       </tr>
     <% }); %>
 </table>
