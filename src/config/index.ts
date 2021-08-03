@@ -38,7 +38,7 @@ app.get("/2400m_run", async (req, res) => {
     const result = await client.query(`SELECT * FROM "2400m_run"`);
     const results = { results: result ? result.rows : null };
     console.log(results);
-    res.render("pages/2400m_run", results);
+    res.render("pages/2400m-run", results);
     client.release();
   } catch (err) {
     console.error(err);
